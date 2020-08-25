@@ -1,0 +1,303 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #51c7bb;
+}
+body {
+	font-family: sans-serif;
+    font-size: 87.5%;
+    width: 90%;
+    margin: 2em auto;
+    border: 3px solid #f6f6f3;
+    background-color: #ffeed1;
+		box-shadow:  0px 0px 37px -5px;
+}
+
+a:focus, a:hover {
+	background-color: #51c7bb;
+}
+h2 {
+	font-family: 'Ubuntu' , Serif;
+  text-align: center;
+}
+p {
+	padding-bottom: .5em;
+	text-align: center;
+}
+
+
+/* the styles for the header */
+header {
+	padding: 1.5em 0 6em 0;
+	border-bottom: 3px solid #f6f6f3;
+	background-color: #ff9f6e;
+}
+header h1 {
+	font-size: 350%;
+	font-family: 'Poiret One' , Serif;
+  color: black;
+	margin: 0;  /* to override margin settings in normalize.css */
+}
+header h3 {
+	font-size: 200%;
+	font-family: 'Poiret One' , Serif;
+  color: black;
+}
+header img {
+	float: left;
+	padding:0 2% 0 2%;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: black;
+	}
+#nav_menu ul li {
+	float: left;
+			}
+#nav_menu ul li a {
+    display: block;
+    width: 200px;
+    text-align: center;
+		font-size: 140%;
+		font-family: 'Poiret One' , Serif;
+    padding: 1em 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: #ff9f6e;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+		
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* the styles for the main content */
+main {
+	clear: both;
+	}
+	
+/* the styles for the section */
+section {
+	width: 70%;
+	text-align: center;
+	margin: 1.5em auto; 
+}
+section h1 {
+	font-size: 200%;
+	padding: .5em 0 .25em 0;
+	margin: 0;      
+	font-family: 'Ubuntu' , Serif/* If you remove this, the margins in normalize.css will be applied. */
+}
+section h2 {
+	font-size: 100%;
+	padding: .5em 0 .25em 0;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+
+/**used to specifically change the text align on learntocode.html without altering align on women.html **/
+.code 
+{
+	text-align: left; 
+}
+
+
+/**used to resize youtube embedded content**/
+.videoWrapper {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section div {width: 100%;
+					margin: 2em auto 4em auto;
+}
+section p {
+	margin: .25em auto 0 auto;
+}
+
+/**ids for pointers from index and rollovers on images for women.html **/
+
+#Hopper {
+		height: 20em;
+    min-width: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+		background-image: url("../images/hopper.jpg");
+		background-repeat: no-repeat;
+		
+}
+#Hopper:hover {
+		background-image: url("../images/hopper2.png");
+		background-repeat: no-repeat;
+		height: 22em;
+		min-width: 200px;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Una {
+		min-width: 200px;
+    max-width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+		background-repeat: no-repeat;
+		height: 20em;
+		background-image: url("../images/una.png");
+}
+#Una:hover {
+		background-image: url("../images/una2.jpg");
+		background-repeat: no-repeat;
+		height: 14em;
+}
+#Reshma {
+		min-width: 200px;
+    max-width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+		background-repeat: no-repeat;
+		height: 15em;
+		background-image: url("../images/reshma.jpg");
+}
+#Reshma:hover {
+		background-image: url("../images/reshma2.jpg");
+		background-repeat: no-repeat;
+		height: 14em;
+}
+.center {
+	position: relative;
+	margin: .5em auto 0 auto;
+}
+
+
+/** Styles for the section table on learntocode.html **/
+table {
+		border: 1px solid black;
+		width: 80%;
+}
+th, td {
+	border: 1px solid black;
+	padding: .2em .7em;
+	text-align: center;
+	font-size: 110%;
+}
+thead {
+	background-color: #51c7bb;
+}
+tbody tr:nth-child(even){
+	background-color: #ff9f6e;
+	}
+figcaption {
+	font-weight: bold;
+	font-size: 120%;
+	padding-bottom: .5em;
+	padding-top: 1em;
+	font-family: 'Ubuntu' , Serif
+}
+td a, a:link, a:visited {
+	font-weight: bold;
+	color: black;
+}
+figure {
+	padding-bottom: 2em;
+}
+
+/**style for the learn to code unordered list **/
+
+section ul {
+	width: 50%;
+	padding: .25em 0 .25em 0;
+}
+
+
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: #f6f6f3;
+	padding: 1em 0;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) 
+{
+	body { font-size: 90%;	}
+	.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 786px) 
+{
+	header img { float: none; }
+	header {text-align: center;
+				padding: 1.5em 1% 3em 1%;}
+	header h1 {font-size: 150%;}
+		
+	#nav_menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		background-color: #535353 !important;
+	}
+	body {box-shadow: none;}
+	
+}
+
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) 
+{
+	section h1 { font-size: 135%; }
+	section {width: 90%;}
+	
+}
